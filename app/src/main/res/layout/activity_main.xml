@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backGround"
     tools:context=".MainActivity">
 
     <EditText
@@ -14,6 +15,8 @@
         android:ems="10"
         android:hint="Type something here..."
         android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -26,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:text="This text will change on save."
+        android:textColor="@color/textColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,18 +40,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/button_background"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
         android:text="Save"
+        android:textColor="@color/backGround"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/return_tv" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/bool_switch"
+        android:id="@+id/theme_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
-        android:text="Switch"
+        android:text="Theme"
+        android:textColor="@color/textColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
